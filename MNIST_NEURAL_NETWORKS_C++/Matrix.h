@@ -52,7 +52,7 @@ public:
         double max = INT_MIN;
         for (int i = 0; i < row_size; i++) {
             for (int j = 0; j < col_size; j++) {
-                if (this->matrix[i][j] > max) max= this->matrix[i][i];
+                if (this->matrix[i][j] > max) max= this->matrix[i][j];
             }
         }
         return max;

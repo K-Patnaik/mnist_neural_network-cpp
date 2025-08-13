@@ -48,19 +48,22 @@ void Neural_Network::BackPropagation(Matrix expected) {
 
 		delta = (delta * previous.getWeights().Transpose()).Product(ReLU_derivative);
 
-		if (i == NN_Layers.size() - 1) {
+		/*if (i == NN_Layers.size() - 1) {
 			std::cout << std::endl << "*******************_______BEFORE_________********************" << std::endl;
 			Print(current.getBiased());
 			std::cout << std::endl << "*******************__________________________********************" << std::endl;
-		}
+		}*/
+
+
 		previous.getWeights() = previous.getWeights() -  gradient_weight * Learning_Rate;
 		current.getBiased() = current.getBiased() - gradient_bias * Learning_Rate;
 		
-		if (i == NN_Layers.size() - 1) {
+
+		/*if (i == NN_Layers.size() - 1) {
 			std::cout << std::endl << "*******************_______AFTER_________********************" << std::endl;
 			Print(current.getBiased());
 			std::cout << std::endl << "*******************__________________________********************" << std::endl;
-		}
+		}*/
 
 	}
 

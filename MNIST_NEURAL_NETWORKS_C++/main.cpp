@@ -1,16 +1,17 @@
 #include "Matrix.h"
 #include "Layer.h"
 #include "Neural_Network.h"
+#include "Model_weights.h"
 #include "DataSet.h"
 
 int main() {
 
-	string Train_File_Path = "C:\\Users\\AMATYA\\OneDrive\\Desktop\\DataSet\\mnist_train.csv";
+	string Train_File_Path = "D:\\Users\\AMATYA\\OneDrive\\Desktop\\DataSet\\mnist_train.csv";
 	cout << endl << "___________________________________TRAINING DATA IS BEING LOADED________________________________________" << endl << endl;
 	vector<vector<double>>train_dataset = DataSet(Train_File_Path);
 	cout << endl << "________________________________TRAINING DATA IS SUCCESFULLY LOADED_____________________________________" << endl << endl;
 
-	string Test_File_Path = "C:\\Users\\AMATYA\\OneDrive\\Desktop\\DataSet\\mnist_test.csv";
+	string Test_File_Path = "D:\\Users\\AMATYA\\OneDrive\\Desktop\\DataSet\\mnist_test.csv";
 	cout << endl << "___________________________________TESTING DATA IS BEING LOADED________________________________________" << endl << endl;
 	vector<vector<double>>test_dataset = DataSet(Test_File_Path);
 	cout << endl << "________________________________TESTING DATA IS SUCCESFULLY LOADED_____________________________________" << endl << endl;
@@ -32,17 +33,18 @@ int main() {
 	Print(output.getBiased());
 
 	cout << endl << endl<< "TRAINING___________"<<endl;
-	for (int i = 0; i < 10000; i++) {
-		cout << i << " ";
+	for (int i = 0; i < train_dataset.size(); i++) {
+		//cout << i << " ";
+		if ((i + 1) % 100 == 0) cout << "|" << i - 100 + 1 << " -- >> " << i + 1 << " | completed" << endl;;
 		vector<double> inp(train_dataset[i].begin()+1, train_dataset[i].end());
 		vector<vector<double>>input(1, inp);
 		Matrix Input(input);
 
-		double label =train_dataset[i][0]*255.0;
+		double label = round(train_dataset[i][0] * 255.0);
 
-		Matrix expected(1, 10, 0);
+		Matrix expected(1, 10, 0.0);
 
-		expected(0, label) = 1;
+		expected(0, label) = 1.0;
 
 		neura.ForwardAlgo(Input);
 		neura.BackPropagation(expected);
@@ -58,13 +60,13 @@ int main() {
 	Print(output.getBiased());
 
 	double count = 0;
-	for (int i = 0; i < 25; i++) {
+	for (int i = 0; i < test_dataset.size(); i++) {
 		cout << i << " ";
 		vector<double> inp(test_dataset[i].begin() + 1, test_dataset[i].end());
 		vector<vector<double>>input(1, inp);
 		Matrix Input(input);
 
-		double label = train_dataset[i][0]*255.0;
+		double label = test_dataset[i][0]*255.0;
 
 		Matrix ans = neura.ForwardAlgo(Input);
 		
@@ -89,10 +91,12 @@ int main() {
 
 	}
 
-	cout << endl << "ACCURACY  " << count / 1000;
+	cout << endl << "ACCURACY  " << count / test_dataset.size();
 	
 	cout << "_______________________________________________________________" << endl;
 	Print(neura(3).getBiased());
+	cout << endl << "___________________________________WEIGHTS AND BIASES ARE UPLOADED________________________________________" << endl << endl;
+	SaveWeights(neura, "C:\\Users\\AMATYA\\OneDrive\\Documents\\Model_weights.txt");
 
 	cout << "_______________________________________________________________" << endl;
 	/*Print(hidden2.getBiased());*/

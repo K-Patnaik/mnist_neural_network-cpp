@@ -1,9 +1,9 @@
 #pragma once
 #include "Algorithms.h"
 class Neural_Network {
-private:
+public:
 	vector<Layer> NN_Layers;
-	double Learning_Rate = 0.05;
+	double Learning_Rate = 0.01;
 public:
 	void insert(Layer& l1);
 

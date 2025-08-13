@@ -21,6 +21,7 @@ vector< vector<double> > DataSet(string& file_name) {
 		}
 		Data.push_back(data);
 		cout << i++<<" ";
+		//if (i == 1000) break; // Limit to first 1000 entries for testing
 	}
 	return Data;
 }

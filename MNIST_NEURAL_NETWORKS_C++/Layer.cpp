@@ -4,6 +4,7 @@ Layer::Layer() {}
 
 Layer::Layer(int neuron_count) {
 	Matrix a(1, neuron_count, 0.5);// (double)rand()/ RAND_MAX ********  chooses random value between 0 - 1; ********
+	a.fillRandomNormal(0.0,1.0);
 	outputs = biased = a;
 }
 

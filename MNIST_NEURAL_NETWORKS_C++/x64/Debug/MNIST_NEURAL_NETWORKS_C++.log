@@ -1,36 +1,11 @@
-﻿  Algorithms.cpp
+﻿  main.cpp
 C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.h(53,27): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file 'Algorithms.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.h(54,31): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file 'Algorithms.cpp')
+  (compiling source file 'main.cpp')
   
-  Layer.cpp
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Layer.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\matrix.h(53,27): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file 'Layer.cpp')
-  
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\matrix.h(54,31): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file 'Layer.cpp')
-  
-  Matrix.cpp
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.h(53,27): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file 'Matrix.cpp')
-  
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.h(54,31): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file 'Matrix.cpp')
-  
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(17,33): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(18,36): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(28,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(29,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(40,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(41,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(57,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(58,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(61,35): warning C4018: '<': signed/unsigned mismatch
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(112,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.cpp(113,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\main.cpp(47,15): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
   Neural_Network.cpp
 C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.h(53,27): warning C4018: '<': signed/unsigned mismatch
   (compiling source file 'Neural_Network.cpp')
@@ -39,14 +14,13 @@ C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C
   (compiling source file 'Neural_Network.cpp')
   
 C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Neural_Network.cpp(40,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  main.cpp
+  Model_weights.cpp
 C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.h(53,27): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file 'main.cpp')
+  (compiling source file 'Model_weights.cpp')
   
 C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\Matrix.h(54,31): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file 'main.cpp')
+  (compiling source file 'Model_weights.cpp')
   
-C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\MNIST_NEURAL_NETWORKS_C++\main.cpp(45,15): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
   Generating Code...
   MNIST_NEURAL_NETWORKS_C++.vcxproj -> C:\Users\AMATYA\OneDrive\Desktop\_ML_C++\Neural_Networks\MNIST_NEURAL_NETWORKS_C++\x64\Debug\MNIST_NEURAL_NETWORKS_C++.exe
   'pwsh.exe' is not recognized as an internal or external command,
