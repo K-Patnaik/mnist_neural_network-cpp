@@ -1,4 +1,4 @@
-**NEURAL NETWORK FROM SCRATCH USING C++ FOR MNIST DATASET**
+# **NEURAL NETWORK FROM SCRATCH USING C++ FOR MNIST DATASET**
 
 Today we have self-driving cars.
 But still, we prefer to learn driving.
@@ -15,13 +15,9 @@ Using TensorFlow or PyTorch is like being on autopilot —
 you’ll reach the destination, but you’ll miss the experience.
 
 I wanted to drive it myself:
-
 to feel the equations,
-
 to struggle with gradients,
-
 to fix my own mistakes,
-
 and to enjoy the journey of building intelligence line by line.
 
 Instead of saying “it works because I used TensorFlow/PyTorch”, I asked:
@@ -30,7 +26,7 @@ WHY does it work?**
 
 So I decided to write everything from scratch.
 
-**WHATS INSIDE TH CODE**
+# **WHATS INSIDE THE CODE**
 
 📂 Matrix.h / Matrix.cpp
     Custom matrix class with core operations — multiplication, addition, subtraction, transpose, etc.
