@@ -54,8 +54,10 @@ So I decided to write everything from scratch.
 **My first test drive:**
 Trained on MNIST → just 1 epoch (batch size = 1).
 Already hitting 96% accuracy 🏎️💨.
+
 **The engine remembers**:
 Saved weights → loaded into another program → predictions still solid.
+
 **The open road test:**
 Not just MNIST digits.
 Hand-drawn digits in Paint → recognized in real time using OpenCV. 🎨✨
